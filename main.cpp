@@ -95,7 +95,7 @@ int main(int argc, char* argv[], char* env[])
     // Set the various default paths
     gCurrentDirectory = fs::absolute(fs::current_path());
     gMakefilesDirectory = gCurrentDirectory / "makefiles";
-    gSessionsDirectory = "tmp/sessions";
+    gSessionsDirectory = "/tmp/sessions";
 
     try {
         process_cmdline(argc, argv);
